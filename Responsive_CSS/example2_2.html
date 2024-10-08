@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Example (No Flex)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            /* Float the sidebar to the left */
+        }
+
+        .main-content {
+            margin-left: 220px;
+            /* Add margin to account for the sidebar width */
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        /* Hide the sidebar and adjust the main content on screens smaller than 480px */
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                display: none;
+            }
+
+            .main-content {
+                margin-left: 0;
+                /* Reset the margin when sidebar is hidden */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            Sidebar Content
+        </div>
+        <div class="main-content">
+            <h1>Responsive Sidebar Example (No Flex)</h1>
+            <p>This is the main content area. Resize the browser window to see the effect. When the screen width is
+                480px or smaller, the sidebar will be hidden and the content will expand to full width.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

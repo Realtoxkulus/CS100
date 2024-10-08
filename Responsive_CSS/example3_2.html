@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+        }
+
+        /* Default for small screens (e.g., phones) */
+        .grid-container {
+            grid-template-columns: 1fr;
+            /* Single column */
+        }
+
+        /* Medium screens (e.g., tablets) */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                /* Two columns */
+            }
+        }
+
+        /* Large screens (e.g., laptops, desktops) */
+        @media (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+                /* Four columns */
+            }
+        }
+
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .grid-item:nth-child(1) {
+            background-color: blueviolet;
+        }
+
+        .grid-item:nth-child(2) {
+            background-color: lightgreen;
+        }
+
+        .grid-item:nth-child(3) {
+            background-color: lightcoral;
+        }
+
+        .grid-item:nth-child(4) {
+            background-color: orange;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+    </div>
+
+</body>
+
+</html>

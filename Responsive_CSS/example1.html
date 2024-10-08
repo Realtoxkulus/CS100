@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .header {
+            background-color: purple;
+            height: 100px;
+        }
+
+        .content {
+            background-color: lightblue;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+            background-color: rgb(208, 230, 173);
+            height: 200px;
+        }
+
+        .footer {
+            background-color: rgb(222, 111, 26);
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Row 1: Header (spans full width on all devices) -->
+        <div class="row">
+            <div class="col-12 header"></div>
+        </div>
+
+        <!-- Row 2: Content -->
+        <div class="row">
+            <!-- Phone: Single column; Tablet/Desktop: Sidebar and Main Content -->
+            <div class="col-12 col-md-3 sidebar"></div> <!-- Sidebar (left) -->
+            <div class="col-12 col-md-9 content"></div> <!-- Main Content (center) -->
+        </div>
+
+        <!-- Row 3: Footer (spans full width on all devices) -->
+        <div class="row">
+            <div class="col-12 footer"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
